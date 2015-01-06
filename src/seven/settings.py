@@ -40,11 +40,45 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'profiles',
     'crispy_forms',
+    'allauth',
+    'allauth.account',
 )
 
+SITE_ID = 1
+
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+LOGIN_URL ='/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"
+ACCOUNT_CONFIRM_EMAIL_ON_GET = False
+ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = LOGIN_URL
+ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = LOGIN_REDIRECT_URL
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 10
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = None #choices are: "mandatory", "optional", or None
+ACCOUNT_EMAIL_SUBJECT_PREFIX = "Subject is: "
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = "http"
+ACCOUNT_LOGOUT_ON_GET = False
+ACCOUNT_LOGOUT_REDIRECT_URL = LOGIN_URL
+ACCOUNT_SIGNUP_FORM_CLASS = None #add a custom sing up form
+ACCOUNT_SIGNUP_PASSWORD_VERIFICATION = True #use false if you don't want double password fields
+ACCOUNT_UNIQUE_EMAIL = True #enforces emails are unique to all accounts
+ACCOUNT_USER_MODEL_USERNAME_FIELD = "username"
+ACCOUNT_USER_MODEL_EMAIL_FIELD = "email"
+#ACCOUNT_USER_DISPLAY (=a callable returning user.username)
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+ACCOUNT_USERNAME_BLACKLIST = ['some_username_youdont_want']
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_PASSWORD_INPUT_RENDER_VALUE = False
+ACCOUNT_PASSWORD_MIN_LENGTH = 6
+ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
+
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -91,6 +125,29 @@ USE_TZ = True
 TEMPLATE_DIRS = (
     # "/Users/shaymerritte/Desktop/seven/static/templates/",
     os.path.join(os.path.dirname(BASE_DIR,), "static", "templates"),
+)
+TEMPLATE_CONTEXT_PROCESSORS = (
+        "django.contrib.auth.context_processors.auth",
+        "django.core.context_processors.debug",
+        "django.core.context_processors.i18n",
+        "django.core.context_processors.media",
+        "django.core.context_processors.static",
+        "django.core.context_processors.tz",
+        "django.contrib.messages.context_processors.messages",
+        "django.core.context_processors.request",
+        "allauth.account.context_processors.account",
+        "allauth.socialaccount.context_processors.socialaccount",
+
+                )
+
+AUTHENTICATION_BACKENDS = (
+
+    # Needed to login by username in Django admin, regardless of `allauth`
+    "django.contrib.auth.backends.ModelBackend",
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    "allauth.account.auth_backends.AuthenticationBackend",
+
 )
 
 MEDIA_URL = '/media/'

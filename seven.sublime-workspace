@@ -28,50 +28,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/contact/views.py",
+			"file": "/Users/shaymerritte/Desktop/new shay site/css/ct-navbar.css",
 			"settings":
 			{
-				"buffer_size": 875,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/contact/forms.py",
-			"settings":
-			{
-				"buffer_size": 264,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "static/templates/contact.html",
-			"settings":
-			{
-				"buffer_size": 354,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/seven/settings.py",
-			"settings":
-			{
-				"buffer_size": 2847,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "static/templates/base.html",
-			"settings":
-			{
-				"buffer_size": 2157,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/profiles/views.py",
-			"settings":
-			{
-				"buffer_size": 266,
+				"buffer_size": 13918,
 				"line_ending": "Unix"
 			}
 		}
@@ -100,18 +60,18 @@
 	},
 	"file_history":
 	[
+		"/Users/shaymerritte/Desktop/seven/static/templates/contact.html",
+		"/Users/shaymerritte/Desktop/seven/src/contact/views.py",
+		"/Users/shaymerritte/Desktop/seven/src/contact/forms.py",
+		"/Users/shaymerritte/Desktop/seven/src/seven/settings.py",
+		"/Users/shaymerritte/Desktop/seven/src/profiles/views.py",
 		"/Users/shaymerritte/Desktop/seven/static/templates/about.html",
+		"/Users/shaymerritte/Desktop/seven/static/templates/base.html",
 		"/Users/shaymerritte/Desktop/seven/src/seven/urls.py",
 		"/Users/shaymerritte/Desktop/seven/static/templates/home.html",
 		"/Users/shaymerritte/Desktop/seven/static/templates/navbar.html",
-		"/Users/shaymerritte/Desktop/seven/static/templates/base.html",
-		"/Users/shaymerritte/Desktop/seven/src/contact/views.py",
-		"/Users/shaymerritte/Desktop/seven/static/templates/contact.html",
-		"/Users/shaymerritte/Desktop/seven/src/contact/forms.py",
-		"/Users/shaymerritte/Desktop/seven/src/profiles/views.py",
 		"/Users/shaymerritte/Desktop/seven/static/static/css/main.css",
 		"/Users/shaymerritte/Desktop/seven/static/templates/bootstrap_template.html",
-		"/Users/shaymerritte/Desktop/seven/src/seven/settings.py",
 		"/Users/shaymerritte/Desktop/seven/src/profiles/admin.py",
 		"/Users/shaymerritte/Desktop/seven/src/profiles/models.py"
 	],
@@ -131,6 +91,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"purple"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -148,164 +109,33 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/contact/views.py",
+					"file": "/Users/shaymerritte/Desktop/new shay site/css/ct-navbar.css",
 					"settings":
 					{
-						"buffer_size": 875,
+						"buffer_size": 13918,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								804,
-								804
+								8479,
+								8479
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/contact/forms.py",
-					"settings":
-					{
-						"buffer_size": 264,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								264,
-								264
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "static/templates/contact.html",
-					"settings":
-					{
-						"buffer_size": 354,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								154,
-								154
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/seven/settings.py",
-					"settings":
-					{
-						"buffer_size": 2847,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1214,
-								1214
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 453.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "static/templates/base.html",
-					"settings":
-					{
-						"buffer_size": 2157,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								371,
-								371
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/profiles/views.py",
-					"settings":
-					{
-						"buffer_size": 266,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								196,
-								196
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4129.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

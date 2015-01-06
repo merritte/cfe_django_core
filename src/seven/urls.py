@@ -5,6 +5,7 @@ from django.contrib import admin
 
 
 urlpatterns = patterns('',
+   (r'^accounts/', include('allauth.urls')),
     # Examples:
     url(r'^$', 'profiles.views.home', name='home'),
     url(r'^contact/$', 'contact.views.home', name='contact'),
