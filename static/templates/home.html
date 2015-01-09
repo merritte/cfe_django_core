@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block styles %}
 	<style>
@@ -16,6 +17,59 @@
 					<h1>Hello, How is it going?</h1>
 					<p>Check out this super sweet jumbotron</p>
 			</div>
+
+<div class="row">
+        <div class="col-lg-4">
+        	<img src="{% static "img/beach1.jpg" %}" class="img-responsive" />
+          <img class="img-circle" src="../static/img/beach1.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+
+        	{% if request.user.is_authenticated %}
+        	<h3> Hello {{ request.user}} </h3>
+
+        	{% else %}
+          <form class="login" method="POST" action="{% url 'account_login' %}">
+          {% csrf_token %}  
+
+<div id="div_id_login" class="form-group"><label for="id_login" class="control-label  requiredField">
+				Login<span class="asteriskField">*</span></label><div class="controls "><input autofocus="autofocus" class="textinput textInput form-control" id="id_login" name="login" placeholder="Username or e-mail" type="text"> </div></div><div id="div_id_password" class="form-group"><label for="id_password" class="control-label  requiredField">
+				Password<span class="asteriskField">*</span></label><div class="controls "><input class="textinput textInput form-control" id="id_password" name="password" placeholder="Password" type="password"> </div></div><div class="form-group"><div id="div_id_remember" class="checkbox"><label for="id_remember" class=""><input class="checkboxinput checkbox" id="id_remember" name="remember" type="checkbox">
+                    Remember Me
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                </label></div></div>
+
+
+  
+  <a class="btn btn-link buttonAction" href="{% url 'account_reset_password' %}">Forgot Password?</a>
+    <a class="btn btn-link buttonAction" href="{% url 'account_signup' %}">Want to sign up?</a>
+
+  <button class="btn btn-default primaryAction" type="submit">Sign In</button>
+</form>
+
+	{% endif %}
+        </div><!-- /.col-lg-4 -->
+      </div>
 
 
 	{% endblock %}

@@ -10,6 +10,10 @@ urlpatterns = patterns('',
     url(r'^$', 'profiles.views.home', name='home'),
     url(r'^contact/$', 'contact.views.home', name='contact'),
     url(r'^about/$', 'profiles.views.about', name='about'),
+    url(r'^profile/$', 'profiles.views.user_profile', name='profile'),
+    url(r'^checkout/$', 'checkout.views.checkout', name='checkout'),
+
+
 
     # url(r'^blog/', include('blog.urls')),
 
